@@ -1,0 +1,73 @@
+
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        .split {
+          height: 100%;
+          width: 50%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          overflow-x: hidden;
+          padding-top: 20px;
+        }
+        .right {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          right: 0;
+          height: 100%;
+          width: 50%;
+          opacity: 0;
+        }
+        .left {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 50%;
+          opacity: 0;
+        }
+    </style>
+</head>
+    
+<body>
+<div class="imgbox">
+    
+    <img class="center-fit" src='https://atgussoxm2we.tritiniaman.ga/18/029.jpg' usemap="#righthalf">
+    <button class="right" onclick="window.location.href='30.html'"></button>
+    <button class="left" onclick="window.location.href='28.html'"></button>
+</div>
+<script>
+    document.body.addEventListener("keydown", function (event) {
+       if (event.keyCode === 39) {
+            window.location.replace('30.html');
+        }
+    });
+</script>
+</body>
+    
+<script>
+document.body.addEventListener("keydown", function (event) {
+    if (event.keyCode === 37) {
+        window.location.replace('28.html');
+    }
+});
+</script>
