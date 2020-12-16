@@ -7,3 +7,4 @@ User-agent: *
 Disallow: /ajax/
 Disallow: /apps/
 Disallow: /https://discord.gg/hN6VFH8
+Disallow: /manga.html
